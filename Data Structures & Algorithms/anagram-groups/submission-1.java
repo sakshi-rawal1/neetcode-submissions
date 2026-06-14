@@ -7,7 +7,7 @@ class Solution {
             for(char c : str.toCharArray()){
                 freq[c-'a']++;
             }
-           String key = Arrays.toString(freq);
+           String key = Arrays.toString(freq); //it will automatically add comma as separator [0,1,1,3,...]
             if(!group.containsKey(key)){
                 group.put(key, new ArrayList<>());
             } 
